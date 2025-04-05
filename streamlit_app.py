@@ -25,6 +25,9 @@ def main():
         with col1:
             company_name = st.text_input("Company Name")
             company_contact_email = st.text_input("Company Contact Email")
+            website_url = st.text_input("Website URL like example.com")
+            privacy_compliance_email = st.text_input(
+                "Privacy Compliance Email")
 
         with col2:
             company_office_address = st.text_area("Company Office Address")
@@ -52,7 +55,7 @@ def main():
 
             if generate_privacy:
                 privacy_policy = generate_privacy_policy(
-                    company_name, company_contact_email, company_office_address, last_updated)
+                    company_name, company_contact_email, company_office_address, last_updated, website_url, privacy_compliance_email)
                 display_document_with_download(
                     "Privacy Policy", privacy_policy)
 
@@ -174,10 +177,14 @@ guarantee that we will receive your returned item."""
     )
 
 
-def generate_privacy_policy(company_name, company_contact_email, company_office_address, last_updated):
-    privacy_template = """PRIVACY STATEMENT
+def generate_privacy_policy(company_name, company_contact_email, company_office_address, last_updated, website_url, privacy_compliance_email):
+    privacy_template = """PRIVACY POLICY
 
 **Last Updated:** {last_updated}
+
+This Privacy Policy describes how {company_name} (the "Site", "we", "us", or "our") collects, uses, and discloses your personal information when you visit, use our services, or make a purchase from {website_url} (the "Site") or otherwise communicate with us regarding the Site (collectively, the "Services"). For purposes of this Privacy Policy, "you" and "your" means you as the user of the Services, whether you are a customer, website visitor, or another individual whose information we have collected pursuant to this Privacy Policy.
+
+Please read this Privacy Policy carefully. By using and accessing any of the Services, you agree to the collection, use, and disclosure of your information as described in this Privacy Policy. If you do not agree to this Privacy Policy, please do not use or access any of the Services.
 
 SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?
 
@@ -209,12 +216,25 @@ How do I withdraw my consent?
 
 If after you opt-in, you change your mind, you may withdraw your consent
 for us to contact you, for the continued collection, use or disclosure
-of your information, at anytime, by contacting us at {company_contact_email} or mailing us at: {company_office_address}
+of your information, at anytime, by contacting us at {privacy_compliance_email} or mailing us at: {company_office_address}
 
 SECTION 3 - DISCLOSURE
 
-We may disclose your personal information if we are required by law to
-do so or if you violate our Terms of Service.
+In certain circumstances, we may disclose your personal information to third parties for contract fulfillment purposes, legitimate purposes and other reasons subject to this Privacy Policy. Such circumstances may include:
+
+- With vendors or other third parties who perform services on our behalf (e.g., IT management, payment processing, data analytics, customer support, cloud storage, fulfillment and shipping).
+- With business and marketing partners to provide services and advertise to you. Our business and marketing partners will use your information in accordance with their own privacy notices.
+- When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through your use of social media widgets or login integrations, with your consent.
+- With our affiliates or otherwise within our corporate group, in our legitimate interests to run a successful business.
+- In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations (including to respond to subpoenas, search warrants and similar requests), to enforce any applicable terms of service, and to protect or defend the Services, our rights, and the rights of our users or others.
+
+We disclose the following categories of personal information and sensitive personal information about users for the purposes set out above in *"How we Collect and Use your Personal Information"* and *"How we Disclose Personal Information"*:
+
+| Category | Categories of Recipients |
+|----------|--------------------------|
+| - Identifiers such as basic contact details and certain order and account information<br>- Commercial information such as order information, shopping information and customer support information<br>- Internet or other similar network activity, such as Usage Data<br>- Geolocation data such as locations determined by an IP address or other technical measures | - Vendors and third parties who perform services on our behalf (such as Internet service providers, payment processors, fulfillment partners, customer support partners and data analytics providers)<br>- Business and marketing partners<br>- Affiliates |
+
+We do not use or disclose sensitive personal information without your consent or for the purposes of inferring characteristics about you.
 
 SECTION 4 - PAYMENT
 
@@ -261,7 +281,7 @@ Once you leave our store's website or are redirected to a third-party
 website or application, you are no longer governed by this Privacy
 Policy or our website's Terms of Service.
 
-Links
+Links:
 
 When you click on links on our store, they may direct you away from our
 site. We are not responsible for the privacy practices of other sites
@@ -275,8 +295,9 @@ lost, misused, accessed, disclosed, altered or destroyed.
 
 SECTION 7 - COOKIES
 
-We use cookies to maintain session of your user. It is not used to
-personally identify you on other websites.
+We use cookies to maintain session of your user account. It is not used to personally identify you on other websites. For specific information about the Cookies that we use related to powering our store with Shopify, see [https://www.shopify.com/legal/cookies](https://www.shopify.com/legal/cookies). We use Cookies to power and improve our Site and our Services (including to remember your actions and preferences), to run analytics and better understand user interaction with the Services (in our legitimate interests to administer, improve and optimize the Services). We may also permit third parties and services providers to use Cookies on our Site to better tailor the services, products and advertising on our Site and other websites.
+
+Most browsers automatically accept Cookies by default, but you can choose to set your browser to remove or reject Cookies through your browser controls. Please keep in mind that removing or blocking Cookies can negatively impact your user experience and may cause some of the Services, including certain features and general functionality, to work incorrectly or no longer be available. Additionally, blocking Cookies may not completely prevent how we share information with third parties such as our advertising partners.
 
 SECTION 8 - AGE OF CONSENT
 
@@ -302,18 +323,17 @@ QUESTIONS AND CONTACT INFORMATION
 
 If you would like to: access, correct, amend or delete any personal
 information we have about you, register a complaint, or simply want more
-information contact our Privacy Compliance Officer at {company_contact_email} or by mail at {company_office_address}
-
-[Re: Privacy Compliance Officer]
-
-[{company_office_address}]
+information contact our Privacy Compliance Team at {privacy_compliance_email} or by mail at {company_office_address}.
 
 ----"""
 
     return privacy_template.format(
+        company_name=company_name,
         company_contact_email=company_contact_email,
         company_office_address=company_office_address,
-        last_updated=last_updated
+        last_updated=last_updated,
+        website_url=website_url,
+        privacy_compliance_email=privacy_compliance_email,
     )
 
 
