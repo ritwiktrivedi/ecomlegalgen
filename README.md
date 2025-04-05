@@ -26,5 +26,5 @@ PS: I first setup a virtual environment using a tool like uv in WSL.
 uv venv
 uv pip install -r requirements.txt
 source .venv/bin/activate
-(ecomlegal) $> streamlit run streamlit_app.py
+(ecomlegalgen) $> streamlit run streamlit_app.py
 ```
