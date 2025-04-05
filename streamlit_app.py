@@ -186,7 +186,7 @@ This Privacy Policy describes how **{company_name}** (the "Site", "we", "us", or
 
 Please read this Privacy Policy carefully. By using and accessing any of the Services, you agree to the collection, use, and disclosure of your information as described in this Privacy Policy. If you do not agree to this Privacy Policy, please do not use or access any of the Services.
 
-SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?
+**SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?**
 
 When you purchase something from our store, as part of the buying and
 selling process, we collect the personal information you give us such as
@@ -199,7 +199,7 @@ that helps us learn about your browser and operating system.
 Email marketing: With your permission, we may send you
 emails about our store, new products and other updates.
 
-SECTION 2 - CONSENT
+**SECTION 2 - CONSENT**
 
 How do you get my consent?
 
@@ -218,7 +218,7 @@ If after you opt-in, you change your mind, you may withdraw your consent
 for us to contact you, for the continued collection, use or disclosure
 of your information, at anytime, by contacting us at {privacy_compliance_email} or mailing us at: {company_office_address}
 
-SECTION 3 - DISCLOSURE
+**SECTION 3 - DISCLOSURE**
 
 In certain circumstances, we may disclose your personal information to third parties for contract fulfillment purposes, legitimate purposes and other reasons subject to this Privacy Policy. Such circumstances may include:
 
@@ -236,7 +236,7 @@ We disclose the following categories of personal information and sensitive perso
 
 We do not use or disclose sensitive personal information without your consent or for the purposes of inferring characteristics about you.
 
-SECTION 4 - PAYMENT
+**SECTION 4 - PAYMENT**
 
 We use Razorpay for processing payments. We/Razorpay do not store your
 card data on their servers. The data is encrypted through the Payment
@@ -255,7 +255,7 @@ information by our store and its service providers.
 For more insight, you may also want to read terms and conditions of
 razorpay on https://razorpay.com
 
-SECTION 5 - THIRD-PARTY SERVICES
+**SECTION 5 - THIRD-PARTY SERVICES**
 
 In general, the third-party providers used by us will only collect, use
 and disclose your information to the extent necessary to allow them to
@@ -287,26 +287,26 @@ When you click on links on our store, they may direct you away from our
 site. We are not responsible for the privacy practices of other sites
 and encourage you to read their privacy statements.
 
-SECTION 6 - SECURITY
+**SECTION 6 - SECURITY**
 
 To protect your personal information, we take reasonable precautions and
 follow industry best practices to make sure it is not inappropriately
 lost, misused, accessed, disclosed, altered or destroyed.
 
-SECTION 7 - COOKIES
+**SECTION 7 - COOKIES**
 
 We use cookies to maintain session of your user account. It is not used to personally identify you on other websites. For specific information about the Cookies that we use related to powering our store with Shopify, see [https://www.shopify.com/legal/cookies](https://www.shopify.com/legal/cookies). We use Cookies to power and improve our Site and our Services (including to remember your actions and preferences), to run analytics and better understand user interaction with the Services (in our legitimate interests to administer, improve and optimize the Services). We may also permit third parties and services providers to use Cookies on our Site to better tailor the services, products and advertising on our Site and other websites.
 
 Most browsers automatically accept Cookies by default, but you can choose to set your browser to remove or reject Cookies through your browser controls. Please keep in mind that removing or blocking Cookies can negatively impact your user experience and may cause some of the Services, including certain features and general functionality, to work incorrectly or no longer be available. Additionally, blocking Cookies may not completely prevent how we share information with third parties such as our advertising partners.
 
-SECTION 8 - AGE OF CONSENT
+**SECTION 8 - AGE OF CONSENT**
 
 By using this site, you represent that you are at least the age of
 majority in your state or province of residence, or that you are the age
 of majority in your state or province of residence and you have given us
 your consent to allow any of your minor dependents to use this site.
 
-SECTION 9 - CHANGES TO THIS PRIVACY POLICY
+**SECTION 9 - CHANGES TO THIS PRIVACY POLICY**
 
 We reserve the right to modify this privacy policy at any time, so
 please review it frequently. Changes and clarifications will take effect
@@ -319,7 +319,7 @@ If our store is acquired or merged with another company, your
 information may be transferred to the new owners so that we may continue
 to sell products to you.
 
-QUESTIONS AND CONTACT INFORMATION
+**QUESTIONS AND CONTACT INFORMATION**
 
 If you would like to: access, correct, amend or delete any personal
 information we have about you, register a complaint, or simply want more
@@ -342,7 +342,7 @@ def generate_terms_conditions(company_name, company_contact_email, company_offic
 
 **Last Updated:** {last_updated}
 
-OVERVIEW
+**OVERVIEW**
 
 This website is operated by **{company_name}**. Throughout
 the site, the terms "we", "us" and "our" refer to **{company_name}**. **{company_name}** offers this website,
@@ -374,7 +374,7 @@ to check this page periodically for changes. Your continued use of or
 access to the website following the posting of any changes constitutes
 acceptance of those changes.
 
-SECTION 1 - ONLINE STORE TERMS
+**SECTION 1 - ONLINE STORE TERMS**
 
 By agreeing to these Terms of Service, you represent that you are at
 least the age of majority in your state or province of residence, or
@@ -392,7 +392,7 @@ nature.
 A breach or violation of any of the Terms will result in an immediate
 termination of your Services.
 
-SECTION 2 - GENERAL CONDITIONS
+**SECTION 2 - GENERAL CONDITIONS**
 
 We reserve the right to refuse service to anyone for any reason at any
 time.
@@ -412,7 +412,7 @@ without express written permission by us.
 The headings used in this agreement are included for convenience only
 and will not limit or otherwise affect these Terms.
 
-SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION
+**SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION**
 
 We are not responsible if information made available on this site is not
 accurate, complete or current. The material on this site is provided for
@@ -428,7 +428,7 @@ at any time, but we have no obligation to update any information on our
 site. You agree that it is your responsibility to monitor changes to our
 site.
 
-SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES
+**SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES**
 
 Prices for our products are subject to change without notice.
 
@@ -438,7 +438,7 @@ We reserve the right at any time to modify or discontinue the Service
 We shall not be liable to you or to any third-party for any
 modification, price change, suspension or discontinuance of the Service.
 
-SECTION 5 - PRODUCTS OR SERVICES
+**SECTION 5 - PRODUCTS OR SERVICES**
 
 Certain products or services may be available exclusively online through
 the website. These products or services may have limited quantities and
@@ -462,7 +462,7 @@ We do not warrant that the quality of any products, services,
 information, or other material purchased or obtained by you will meet
 your expectations, or that any errors in the Service will be corrected.
 
-SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION
+**SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION**
 
 We reserve the right to refuse any order you place with us. We may, in
 our sole discretion, limit or cancel quantities purchased per person,
@@ -483,7 +483,7 @@ your transactions and contact you as needed.
 
 For more detail, please review our Returns Policy.
 
-SECTION 7 - OPTIONAL TOOLS
+**SECTION 7 - OPTIONAL TOOLS**
 
 We may provide you with access to third-party tools over which we
 neither monitor nor have any control nor input.
@@ -504,7 +504,7 @@ the website (including, the release of new tools and resources). Such
 new features and/or services shall also be subject to these Terms of
 Service.
 
-SECTION 8 - THIRD-PARTY LINKS
+**SECTION 8 - THIRD-PARTY LINKS**
 
 Certain content, products and services available via our Service may
 include materials from third-parties.
@@ -524,7 +524,7 @@ before you engage in any transaction. Complaints, claims, concerns, or
 questions regarding third-party products should be directed to the
 third-party.
 
-SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS
+**SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS**
 
 If, at our request, you send certain specific submissions (for example
 contest entries) or without a request from us you send creative ideas,
@@ -554,12 +554,12 @@ origin of any comments. You are solely responsible for any comments you
 make and their accuracy. We take no responsibility and assume no
 liability for any comments posted by you or any third-party.
 
-SECTION 10 - PERSONAL INFORMATION
+**SECTION 10 - PERSONAL INFORMATION**
 
 Your submission of personal information through the store is governed by
 our Privacy Policy.
 
-SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS
+**SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS**
 
 Occasionally there may be information on our site or in the Service that
 contains typographical errors, inaccuracies or omissions that may relate
@@ -577,7 +577,7 @@ refresh date applied in the Service or on any related website, should be
 taken to indicate that all information in the Service or on any related
 website has been modified or updated.
 
-SECTION 12 - PROHIBITED USES
+**SECTION 12 - PROHIBITED USES**
 
 In addition to other prohibitions as set forth in the Terms of Service,
 you are prohibited from using the site or its content: (a) for any
@@ -599,7 +599,7 @@ features of the Service or any related website, other websites, or the
 Internet. We reserve the right to terminate your use of the Service or
 any related website for violating any of the prohibited uses.
 
-SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY
+**SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY**
 
 We do not guarantee, represent or warrant that your use of our service
 will be uninterrupted, timely, secure or error-free.
@@ -639,7 +639,7 @@ exclusion or the limitation of liability for consequential or incidental
 damages, in such states or jurisdictions, our liability shall be limited
 to the maximum extent permitted by law.
 
-SECTION 14 - INDEMNIFICATION
+**SECTION 14 - INDEMNIFICATION**
 
 You agree to indemnify, defend and hold harmless **{company_name}** and our parent, subsidiaries, affiliates, partners,
 officers, directors, agents, contractors, licensors, service providers,
@@ -649,7 +649,7 @@ third-party due to or arising out of your breach of these Terms of
 Service or the documents they incorporate by reference, or your
 violation of any law or the rights of a third-party.
 
-SECTION 15 - SEVERABILITY
+**SECTION 15 - SEVERABILITY**
 
 In the event that any provision of these Terms of Service is determined
 to be unlawful, void or unenforceable, such provision shall nonetheless
@@ -658,7 +658,7 @@ the unenforceable portion shall be deemed to be severed from these Terms
 of Service, such determination shall not affect the validity and
 enforceability of any other remaining provisions.
 
-SECTION 16 - TERMINATION
+**SECTION 16 - TERMINATION**
 
 The obligations and liabilities of the parties incurred prior to the
 termination date shall survive the termination of this agreement for all
@@ -676,7 +676,7 @@ liable for all amounts due up to and including the date of termination;
 and/or accordingly may deny you access to our Services (or any part
 thereof).
 
-SECTION 17 - ENTIRE AGREEMENT
+**SECTION 17 - ENTIRE AGREEMENT**
 
 The failure of us to exercise or enforce any right or provision of these
 Terms of Service shall not constitute a waiver of such right or
@@ -693,13 +693,13 @@ Service).
 Any ambiguities in the interpretation of these Terms of Service shall
 not be construed against the drafting party.
 
-SECTION 18 - GOVERNING LAW
+**SECTION 18 - GOVERNING LAW**
 
 These Terms of Service and any separate agreements whereby we provide
 you Services shall be governed by and construed in accordance with the
 laws of India and jurisdiction of Jaipur, Rajasthan
 
-SECTION 19 - CHANGES TO TERMS OF SERVICE
+**SECTION 19 - CHANGES TO TERMS OF SERVICE**
 
 You can review the most current version of the Terms of Service at any
 time at this page.
@@ -711,7 +711,7 @@ periodically for changes. Your continued use of or access to our website
 or the Service following the posting of any changes to these Terms of
 Service constitutes acceptance of those changes.
 
-SECTION 20 - CONTACT INFORMATION
+**SECTION 20 - CONTACT INFORMATION**
 
 Questions about the Terms of Service should be sent to us at
 {company_contact_email}.
