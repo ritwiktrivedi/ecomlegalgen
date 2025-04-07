@@ -61,7 +61,7 @@ def main():
 
             if generate_terms:
                 terms_conditions = generate_terms_conditions(
-                    company_name, company_contact_email, company_office_address, last_updated)
+                    company_name, company_contact_email, company_office_address, last_updated, website_url)
                 display_document_with_download(
                     "Terms and Conditions", terms_conditions)
 
@@ -483,7 +483,7 @@ your transactions and contact you as needed.
 
 For more detail, please review our Returns Policy.
 
-SECTION 6A - GIFT CARDS
+**SECTION 6A - GIFT CARDS**
 
 Gift Cards issued by {company_name} are redeemable solely on our website {website_url}. Gift Cards cannot be redeemed for cash, reloaded, resold, transferred for value, or used to purchase other gift cards, unless required by law.
 Gift Cards must be used within their validity period as defined at the time of purchase. In India, unless otherwise stated, the default validity is 3 years from the date of issue in compliance with applicable Reserve Bank of India (RBI) guidelines on prepaid payment instruments.
