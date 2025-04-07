@@ -337,7 +337,7 @@ information contact our Privacy Compliance Team at {privacy_compliance_email} or
     )
 
 
-def generate_terms_conditions(company_name, company_contact_email, company_office_address, last_updated):
+def generate_terms_conditions(company_name, company_contact_email, company_office_address, last_updated, website_url):
     terms_template = """TERMS OF SERVICE
 
 **Last Updated:** {last_updated}
@@ -482,6 +482,14 @@ and credit card numbers and expiration dates, so that we can complete
 your transactions and contact you as needed.
 
 For more detail, please review our Returns Policy.
+
+SECTION 6A - GIFT CARDS
+
+Gift Cards issued by {company_name} are redeemable solely on our website {website_url}. Gift Cards cannot be redeemed for cash, reloaded, resold, transferred for value, or used to purchase other gift cards, unless required by law.
+Gift Cards must be used within their validity period as defined at the time of purchase. In India, unless otherwise stated, the default validity is 3 years from the date of issue in compliance with applicable Reserve Bank of India (RBI) guidelines on prepaid payment instruments.
+Lost, stolen, or unauthorized use of gift cards is the sole responsibility of the purchaser or holder. We are not responsible for lost or stolen gift cards or their unauthorized use.
+Any unused balance on a Gift Card after expiry shall be forfeited and will not be refunded.
+By purchasing, redeeming, or using a Gift Card, you agree to be bound by these terms and any other terms provided with the Gift Card. {company_name} reserves the right to modify the terms and conditions of Gift Card usage at its discretion, in compliance with Indian law.
 
 **SECTION 7 - OPTIONAL TOOLS**
 
@@ -722,7 +730,8 @@ Questions about the Terms of Service should be sent to us at
         company_name=company_name,
         company_contact_email=company_contact_email,
         company_office_address=company_office_address,
-        last_updated=last_updated
+        last_updated=last_updated,
+        website_url=website_url
     )
 
 
