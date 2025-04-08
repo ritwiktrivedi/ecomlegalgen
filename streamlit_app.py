@@ -38,7 +38,7 @@ def main():
 
         # Additional options
         st.subheader("Select Documents to Generate")
-        generate_refund = st.checkbox("Refund Policy", value=True)
+        generate_refund = st.checkbox("Shipping and Return Policy", value=True)
         generate_privacy = st.checkbox("Privacy Policy", value=True)
         generate_terms = st.checkbox("Terms and Conditions", value=True)
 
@@ -52,7 +52,8 @@ def main():
             if generate_refund:
                 refund_policy = generate_refund_policy(
                     company_name, company_contact_email, refund_timeframe, last_updated)
-                display_document_with_download("Refund Policy", refund_policy)
+                display_document_with_download(
+                    "Shipping and Return Policy", refund_policy)
 
             if generate_privacy:
                 privacy_policy = generate_privacy_policy(
