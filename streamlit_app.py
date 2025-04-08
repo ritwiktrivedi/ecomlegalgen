@@ -15,7 +15,7 @@ def main():
     st.markdown(
         "These terms are templates and should be reviewed by a legal professional before use.")
 
-    st.markdown("These terms have been made around Razorpay, if you are using any other payment gateway, please change the terms accordingly.")
+    st.markdown("These terms have been made around Razorpay and Shopify, if you are using any other payment gateway or ecommerce service, please change the terms accordingly.")
 
     # Form for collecting company information
     with st.form("company_info_form"):
