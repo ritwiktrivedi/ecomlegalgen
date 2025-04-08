@@ -142,7 +142,7 @@ cannot be refunded.
 **Exchanges (if applicable)**
 
 We only replace items if they are defective or damaged. If you need to
-exchange it for the same item, send us an email at {company_contact_email} and send your item to: {company_office_address}.
+exchange it for the same item, send us an email at {company_contact_email} and send your item to the address provided in the email by the support team.
 
 **Gifts**
 
@@ -156,7 +156,8 @@ refund to the gift giver and he will find out about your return.
 
 **Shipping**
 
-To return your product, you should mail your product to: {company_office_address}.
+To return your product, you should contact us at {company_contact_email} and then mail the items to the address provided in the email
+by the support team.
 
 You will be responsible for paying for your own shipping costs for
 returning your item. Shipping costs are non-refundable. If you receive a
@@ -216,7 +217,7 @@ How do I withdraw my consent?
 
 If after you opt-in, you change your mind, you may withdraw your consent
 for us to contact you, for the continued collection, use or disclosure
-of your information, at anytime, by contacting us at {privacy_compliance_email} or mailing us at: {company_office_address}
+of your information, at anytime, by contacting us at {privacy_compliance_email}.
 
 **SECTION 3 - DISCLOSURE**
 
@@ -323,7 +324,7 @@ to sell products to you.
 
 If you would like to: access, correct, amend or delete any personal
 information we have about you, register a complaint, or simply want more
-information contact our Privacy Compliance Team at {privacy_compliance_email} or by mail at {company_office_address}.
+information contact our Privacy Compliance Team at {privacy_compliance_email}.
 
 ----"""
 
