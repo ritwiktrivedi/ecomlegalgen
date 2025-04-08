@@ -739,7 +739,7 @@ not be construed against the drafting party.
 
 These Terms of Service and any separate agreements whereby we provide
 you Services shall be governed by and construed in accordance with the
-laws of India and jurisdiction of {jurisdiction}.
+laws of India and jurisdiction of **{jurisdiction}**.
 
 **SECTION 19 - CHANGES TO TERMS OF SERVICE**
 
