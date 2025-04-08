@@ -66,14 +66,42 @@ def main():
 
 
 def generate_refund_policy(company_name, company_contact_email, refund_timeframe, last_updated):
-    refund_template = """**Refund Policy**
+    refund_template = """**Shipping and Return Policy**
 
 **Last Updated:** {last_updated}
 
+# For Domestic B2C Orders (Within India)
+
+**Shipping Policy**
+
+We offer two types of orders:
+
+1. Made-on-Order: 
+Ships within 15-28 days from payment.
+
+2. Ready-to-Ship: 
+The orders are processed manually for shipping and may take upto 48 hrs in case of high volumes. 
+The estimated delivery time is 5-7 business days from the moment the order is processed. 
+The exact delivery time will depend on courier partners and information regarding the same shall be mailed as 
+soon as the order is processed.
+Delivery time depends on the courier, and tracking details are provided once the order is shipped.
+
+
 **Returns**
 
-Our policy lasts {refund_timeframe} days. If {refund_timeframe} days have gone by since your purchase or when the item was delivered (whichever is later),
+Our returns and refunds policy lasts {refund_timeframe} days. If your product was damaged in transit,
+ send a photo on the delivery day to {company_contact_email} for a refund or replacement.
+ (An extension of 1 day may be given on a case by case basis but this is a must for processing the refund or replacement request).
+
+For ready to ship orders, if {refund_timeframe} days have gone by since your 
+purchase or when the item(s) was(were) delivered (whichever is later),
 unfortunately we can't offer you a refund or exchange.
+
+Custom/On-Order items (B2C non bulk or less than 50 pcs) are returnable only for damage or quality issues.
+We offer a partial refund or replacement (which may take 15-28 days).
+Exchanges are only for the original product(s) in the order.
+
+If an item appears to be intentionally damaged, only a partial refund will be issued, with no exchange as decided at our sole discretion.
 
 To be eligible for a return, your item must be unused and in the same
 condition that you received it. It must also be in the original
@@ -86,7 +114,7 @@ hazardous materials, or flammable liquids or gases.
 
 Additional non-returnable items:
 
--   Gift cards
+-   Gift cards (refer section 6A of Terms and Conditions)
 
 -   Downloadable software products
 
@@ -167,7 +195,12 @@ product to reach you, may vary.
 
 If you are shipping an item over INR 5000, you should consider using a
 trackable shipping service or purchasing shipping insurance. We don't
-guarantee that we will receive your returned item."""
+guarantee that we will receive your returned item.
+
+# For B2B, International B2B and B2C Bulk orders
+
+We currently ship only within India for standard B2C orders but are shipping internationally on case by case basis for bulk orders placed via email upon mutual acceptance of the terms of the B2B or a bulk B2C sale transaction.
+The shipping terms will be negotiated on a per transaction/order basis as may be agreed upon mutually."""
 
     return refund_template.format(
         company_contact_email=company_contact_email,
