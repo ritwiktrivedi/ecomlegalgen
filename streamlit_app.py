@@ -26,7 +26,7 @@ def main():
             company_name = st.text_input("Company Name")
             website_url = st.text_input("Website URL like example.com")
             jurisdiction = st.text_input(
-                "Jurisdiction (e.g., Delhi, India)")
+                "Jurisdiction (e.g., Dehradun, Uttarakhand)")
 
         with col2:
             company_contact_email = st.text_input("Company Contact Email")
