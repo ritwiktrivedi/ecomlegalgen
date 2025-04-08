@@ -25,6 +25,8 @@ def main():
         with col1:
             company_name = st.text_input("Company Name")
             website_url = st.text_input("Website URL like example.com")
+            jurisdiction = st.text_input(
+                "Jurisdiction (e.g., Delhi, India)")
 
         with col2:
             company_contact_email = st.text_input("Company Contact Email")
@@ -43,7 +45,7 @@ def main():
         submit_button = st.form_submit_button("Generate Documents")
 
     if submit_button:
-        if not company_name or not company_contact_email or not website_url or not privacy_compliance_email:
+        if not company_name or not company_contact_email or not website_url or not privacy_compliance_email or not jurisdiction:
             st.error("Please fill in all required fields.")
         else:
             # Generate the selected documents
@@ -60,7 +62,7 @@ def main():
 
             if generate_terms:
                 terms_conditions = generate_terms_conditions(
-                    company_name, company_contact_email, last_updated, website_url)
+                    company_name, company_contact_email, last_updated, website_url, jurisdiction)
                 display_document_with_download(
                     "Terms and Conditions", terms_conditions)
 
@@ -368,7 +370,7 @@ information contact our Privacy Compliance Team at {privacy_compliance_email}.
     )
 
 
-def generate_terms_conditions(company_name, company_contact_email, last_updated, website_url):
+def generate_terms_conditions(company_name, company_contact_email, last_updated, website_url, jurisdiction):
     terms_template = """TERMS OF SERVICE
 
 **Last Updated:** {last_updated}
@@ -736,7 +738,7 @@ not be construed against the drafting party.
 
 These Terms of Service and any separate agreements whereby we provide
 you Services shall be governed by and construed in accordance with the
-laws of India and jurisdiction of Jaipur, Rajasthan
+laws of India and jurisdiction of {jurisdiction}.
 
 **SECTION 19 - CHANGES TO TERMS OF SERVICE**
 
@@ -761,7 +763,8 @@ Questions about the Terms of Service should be sent to us at
         company_name=company_name,
         company_contact_email=company_contact_email,
         last_updated=last_updated,
-        website_url=website_url
+        website_url=website_url,
+        jurisdiction=jurisdiction
     )
 
 
