@@ -24,13 +24,12 @@ def main():
 
         with col1:
             company_name = st.text_input("Company Name")
-            company_contact_email = st.text_input("Company Contact Email")
             website_url = st.text_input("Website URL like example.com")
-            privacy_compliance_email = st.text_input(
-                "Privacy Compliance Email")
 
         with col2:
-            company_office_address = st.text_area("Company Office Address")
+            company_contact_email = st.text_input("Company Contact Email")
+            privacy_compliance_email = st.text_input(
+                "Privacy Compliance Email")
             refund_timeframe = st.slider(
                 "Refund Timeframe (in days)", min_value=1, value=10, max_value=30)
             refund_timeframe = int(refund_timeframe)
@@ -44,29 +43,29 @@ def main():
         submit_button = st.form_submit_button("Generate Documents")
 
     if submit_button:
-        if not company_name or not company_contact_email or not company_office_address:
+        if not company_name or not company_contact_email or not website_url or not privacy_compliance_email:
             st.error("Please fill in all required fields.")
         else:
             # Generate the selected documents
             if generate_refund:
                 refund_policy = generate_refund_policy(
-                    company_name, company_contact_email, company_office_address, refund_timeframe, last_updated)
+                    company_name, company_contact_email, refund_timeframe, last_updated)
                 display_document_with_download("Refund Policy", refund_policy)
 
             if generate_privacy:
                 privacy_policy = generate_privacy_policy(
-                    company_name, company_contact_email, company_office_address, last_updated, website_url, privacy_compliance_email)
+                    company_name, company_contact_email, last_updated, website_url, privacy_compliance_email)
                 display_document_with_download(
                     "Privacy Policy", privacy_policy)
 
             if generate_terms:
                 terms_conditions = generate_terms_conditions(
-                    company_name, company_contact_email, company_office_address, last_updated, website_url)
+                    company_name, company_contact_email, last_updated, website_url)
                 display_document_with_download(
                     "Terms and Conditions", terms_conditions)
 
 
-def generate_refund_policy(company_name, company_contact_email, company_office_address, refund_timeframe, last_updated):
+def generate_refund_policy(company_name, company_contact_email, refund_timeframe, last_updated):
     refund_template = """**Refund Policy**
 
 **Last Updated:** {last_updated}
@@ -172,13 +171,12 @@ guarantee that we will receive your returned item."""
 
     return refund_template.format(
         company_contact_email=company_contact_email,
-        company_office_address=company_office_address,
         refund_timeframe=refund_timeframe,
         last_updated=last_updated
     )
 
 
-def generate_privacy_policy(company_name, company_contact_email, company_office_address, last_updated, website_url, privacy_compliance_email):
+def generate_privacy_policy(company_name, company_contact_email, last_updated, website_url, privacy_compliance_email):
     privacy_template = """PRIVACY POLICY
 
 **Last Updated:** {last_updated}
@@ -331,14 +329,13 @@ information contact our Privacy Compliance Team at {privacy_compliance_email}.
     return privacy_template.format(
         company_name=company_name,
         company_contact_email=company_contact_email,
-        company_office_address=company_office_address,
         last_updated=last_updated,
         website_url=website_url,
         privacy_compliance_email=privacy_compliance_email,
     )
 
 
-def generate_terms_conditions(company_name, company_contact_email, company_office_address, last_updated, website_url):
+def generate_terms_conditions(company_name, company_contact_email, last_updated, website_url):
     terms_template = """TERMS OF SERVICE
 
 **Last Updated:** {last_updated}
@@ -730,7 +727,6 @@ Questions about the Terms of Service should be sent to us at
     return terms_template.format(
         company_name=company_name,
         company_contact_email=company_contact_email,
-        company_office_address=company_office_address,
         last_updated=last_updated,
         website_url=website_url
     )
